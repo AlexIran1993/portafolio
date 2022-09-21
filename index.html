@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika:wght@500&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#briefcase">Portafolio</a></li>
+                    <li><a href="#about-me">Sobre mi</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="hero" id="inicio">
+
+            <img src="./img/fondo.jpg" alt="">
+        </div>
+
+        <div class="profile">
+            <div class="square"></div>
+            <div class="circle-trans"></div>
+            <div class="circle"></div>
+            <div class="profile-image">
+                <img src="./img/face.jpg" alt="">
+            </div>
+            <div class="square-text">ALEXIS IRAN VILLA GONZALEZ</div>
+            <div class="square-text-2"><span>ING. EN SISTEMAS | BACKEND DEVOLPER</span></div>
+            <div class="contact-icon">
+                <a href="https://github.com/AlexIran1993" target="_blank"><img src="./img/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/alexis-iran-5b9239177/" target="_blank"><img src="./img/linkedin.png" alt=""></a>
+                <a data-modal-id="message"><img src="./img/message.png" alt=""></a>
+            </div>
+            <div class="square-text-3"><a href="#about-me"><span>About Me |</span> Sobre Mi</a></div>
+        </div>
+    </section>
+
+    <section class="briefcase" id="briefcase">
+        <div class="briefcase-section container">
+            <h2><span>Briefcase |</span> Portafolio</h2>
+                <div class="briefcase-grid">
+                    <div><a data-modal-id="pw-proyecto1"><img src="./img/pagina-web-portafolio2022.png" alt=""></a></div>
+                    <div><a data-modal-id="pw-proyecto2"><img src="./img/pagina-web-repar.jpg" alt=""></a></div>
+                    <div><a data-modal-id="pw-proyecto3"><img src="./img/pagina-web-robodactav2.jpg" alt=""></a></div>
+                    <div><a data-modal-id="pw-proyecto4"><img src="./img/pagina-web-ionic.jpg" alt=""></a></div>
+                </div>
+        </div>
+    </section>
+
+
+    <section class="skills">
+        <div class="skill container">
+            <div class="knowledge-part">
+                <h2><span>Knowledge |</span> Conocimientos</h2>
+                <div class="knowledge">
+                    <div>
+                        <img src="./img/python.png" alt="">
+                        <h3>PYTHON</h3>
+                    </div>
+                    <div>
+                        <img src="./img/django.png" alt="">
+                        <h3>DJANGO</h3>
+                    </div>
+                    <div>
+                        <img src="./img/postgres.png" alt="">
+                        <h3>POSTGRES</h3>
+                    </div>
+                    <div>
+                        <img src="./img/html.png" alt="">
+                        <h3>HTML</h3>
+                    </div>
+                    <div>
+                        <img src="./img/javascript.png" alt="">
+                        <h3>JAVASCRIPT</h3>
+                    </div>
+                    <div>
+                        <img src="./img/css.png" alt="">
+                        <h3>CSS</h3>
+                    </div>
+                    <div>
+                        <img src="./img/aws.png" alt="">
+                        <h3>AWS</h3>
+                    </div> 
+                </div>
+            </div>
+            <div class="tools-part">
+                <h2><span>Dev Tools |</span>HERRAMIENTAS</h2>
+                <div class="tools">
+                    <div>
+                        <img src="./img/git.png" alt="">
+                        <h3>.GIT</h3>
+                    </div>
+                    <div>
+                        <img src="./img/github-logo.png" alt="">
+                        <h3>GITHUB</h3>
+                    </div>
+                    <div>
+                        <img src="./img/gitbash.png" alt="">
+                        <h3>GITBASH</h3>
+                    </div>
+                    <div>
+                        <img src="./img/VScode.png" alt="">
+                        <h3>VISUAL STUDIO CODE</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about-me"> 
+        <div class="about-flex container">
+            <div class="about-info">
+                <p>
+                    Mi nombre es Alexis Iran Villa Gonzalez, Soy egresado de la carrera de ingenria en sistemas,
+                    enfocado en el desarrollo web del lado backend. Considero que soy una persona
+                </p>
+            </div>
+            <div class="social">
+                <a href="#"><img src="./img/github.png" alt=""></a>
+                <a href="#"><img src="./img/linkedin.png" alt=""></a>
+                <a data-modal-id="message"><img src="./img/message.png" alt=""></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2022 Copyright | Designed by N/CODER</p>
+        </div>
+    </footer>
+
+    <!--Modal de ejemplo usando npm eins-modals
+    <div id="myModal" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="eins-modal-close"></div>
+            EJEMPLO DE PRUEBA      
+            <button class="eins-modal-close-button">OK</button>
+        </div>
+    </div>-->
+
+    <!--Seccion de modales-->
+    <div id="pw-proyecto1" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pagina-web-portafolio2022.png" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>
+                        Descripcion del segundo proyecto dentro del portafolio
+                    </p>
+                
+                    <div class="eins-modal-text-2">
+                        <span>Enlace:</span><a href="#">http://proyecto.com</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/python.png" alt="">
+                            <img src="./img/django.png" alt="">
+                            <img src="./img/postgres.png" alt="">
+                            <img src="./img/javascript.png" alt="">
+                            <img src="./img/html.png" alt="">
+                            <img src="./img/css.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pw-proyecto2" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pagina-web-repar.jpg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>
+                        Descripcion del primer proyecto dentro del portafolio
+                    </p>
+                
+                    <div class="eins-modal-text-2">
+                        <span>Enlace:</span><a href="#">http://proyecto.com</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/python.png" alt="">
+                            <img src="./img/django.png" alt="">
+                            <img src="./img/postgres.png" alt="">
+                            <img src="./img/javascript.png" alt="">
+                            <img src="./img/html.png" alt="">
+                            <img src="./img/css.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pw-proyecto3" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pagina-web-robodactav2.jpg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>
+                        Descripcion del tercer proyecto dentro del portafolio
+                    </p>
+                
+                    <div class="eins-modal-text-2">
+                        <span>Enlace:</span><a href="#">http://proyecto.com</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/python.png" alt="">
+                            <img src="./img/django.png" alt="">
+                            <img src="./img/postgres.png" alt="">
+                            <img src="./img/javascript.png" alt="">
+                            <img src="./img/html.png" alt="">
+                            <img src="./img/css.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pw-proyecto4" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            
+            <div class="pw-content">
+                <div class="eins-modal-preview">
+                    <img src="./img/pagina-web-ionic.jpg" alt="">
+                </div>
+                <div class="eins-modal-text">
+                    <p>
+                        Descripcion del quinto proyecto dentro del portafolio
+                    </p>
+                
+                    <div class="eins-modal-text-2">
+                        <span>Enlace:</span><a href="#">http://proyecto.com</a>
+                    </div>
+                    <div class="eins-modal-text-3">
+                        <span>Tecnologias Usadas:</span>
+                        <div class="eins-modal-tec">
+                            <img src="./img/python.png" alt="">
+                            <img src="./img/django.png" alt="">
+                            <img src="./img/postgres.png" alt="">
+                            <img src="./img/javascript.png" alt="">
+                            <img src="./img/html.png" alt="">
+                            <img src="./img/css.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="message" class="eins-modal" data-options="openTransition: expandIn; openDuration: 200;">
+        <div class="eins-modal-content">
+            
+                <form class="form" action="https://formspree.io/f/mpzbvkja" method="POST">
+                    <label>
+                        Tu Correlo electronico:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        Tu Mensaje:
+                        <textarea name="message"></textarea>
+                    </label>
+                    <!-- your other form fields go here -->
+                    <button type="submit">Enviar</button>
+                </form>
+        </div>
+    </div>
+</body>
+</html>
