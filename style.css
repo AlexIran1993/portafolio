@@ -18,7 +18,8 @@ header {
     top:0;
     z-index:30;
     padding: 5px 0;
-    background-color: transparent
+    background-color: transparent;
+
 }
 
 body {
@@ -34,28 +35,104 @@ body {
 }
 
 
-.navbar {
+.menu {
     display: flex;
     justify-content: flex-end;
-    color: var(--dark2);
-    color: transparent;
 }
 
-.navbar ul {
+.logo {
+    display: none;
+}
+
+.menu_item {
     display: flex;
     list-style: none;
 }
-.navbar a {
-    font-size: 1.5rem;
+
+.menu_item a {
+    font-size: 2rem;
     padding: 10px;
     text-decoration: none;
     color:var(--secondary);
-    margin: 10px;
-
+    margin: 20px;
 }
 
-.navbar a:hover {
+.menu_item a:hover {
     color: var(--primary);
+    transition: .4s;
+}
+
+.btn_menu {
+    display: none;
+}
+
+ul.show {
+    top: 50px;
+}
+
+@media screen and (max-width: 779px) {
+
+    .menu{
+        height: 65px;
+        top: -100px;
+        align-items: center;
+        background-color: var(--dark2);
+        height: 45px;
+        width: 100vw;
+        box-shadow: 5px 0 10px var(--primary);
+    }
+
+    .logo {
+        display: inline-flex;
+        font-size: 2.0rem;
+        justify-content: space-between;
+        color: var(--secondary);
+        text-align: center;
+    }
+    
+    .btn_menu {
+        display: inline-flex;
+        font-size: 2.0rem;
+        margin-right: 30px;
+        color: var(--secondary);
+        cursor: pointer;
+    }
+    .btn_menu:hover {
+        color: var(--primary);
+        transition: .4s;
+        
+    }
+    .menu_item {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 410px);
+        background: var(--dark1);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    
+    .menu_item li  {
+        font-size: 2rem;
+        padding: 10px;
+        gap: 25px;
+    }
+
+    .menu_item a:hover {
+        color: var(--primary);
+        transition: .4s;
+    }
+}
+
+@media screen and (max-width:858px) and (orientation: landscape) {
+    .navbar li {
+        margin: 5px 0 0 0;
+    }
+    .navbar ul {
+        overflow: scroll;
+        height: calc(100% - 65px)
+    }
 }
 
 .hero {
@@ -142,13 +219,14 @@ section.skills {
 .skill h2 {
     padding: 90px;
     font-size: 2.2rem;
+    justify-content: center;
 }
 
 .skill img {
-    width:90px;
+    width:100px;
 }
 .skill img:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 }
 .knowledge {
    display: grid;
@@ -158,13 +236,9 @@ section.skills {
 }
 .tools {
     display: grid;
-    grid-template-columns:repeat(auto-fit,minmax(70px,auto));
+    grid-template-columns:repeat(auto-fit,minmax(110px,auto));
     justify-content: center;
-    gap:50px;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 110px;
-
+    gap:25px;
 }
 
 
@@ -457,6 +531,7 @@ label {
 .contact-icon {
     top:440px;
     z-index: 11;
+    cursor: pointer;
 
 }
 .contact-icon img {
