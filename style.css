@@ -70,11 +70,75 @@ ul.show {
     top: 50px;
 }
 
+
+
+@media screen and (max-width:858px) and (orientation: landscape) {
+    .navbar li {
+        margin: 5px 0 0 0;
+    }
+    .navbar ul {
+        overflow: scroll;
+        height: calc(100% - 65px)
+    }
+}
+
+.hero {
+    background-color: var(--dark2);
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 530px;
+    opacity: 0.100;
+}
+
+
+
+span {
+    color: var(--primary);
+}
+
+
+/*Briefcase*/
+
+.briefcase {
+    background-color: var(--dark1);
+}
+
+.briefcase-section h2{
+    padding: 40px;
+    text-align: center;
+ 
+}
+
+.briefcase-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(390px,auto));
+    gap:55px;
+    width: 90%;
+    margin:0 auto;
+  
+}
+
+.briefcase-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    cursor: pointer;
+
+}
+
+.briefcase-grid img:hover {
+    transform: scale(1.1);
+}
+
+
 @media screen and (max-width: 779px) {
 
     .menu{
         height: 65px;
-        top: -100px;
+        top: 300px;
         align-items: center;
         background-color: var(--dark2);
         height: 45px;
@@ -123,79 +187,12 @@ ul.show {
         color: var(--primary);
         transition: .4s;
     }
-}
 
-@media screen and (max-width:858px) and (orientation: landscape) {
-    .navbar li {
-        margin: 5px 0 0 0;
-    }
-    .navbar ul {
-        overflow: scroll;
-        height: calc(100% - 65px)
+    .briefcase-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,auto));
     }
 }
-
-.hero {
-    background-color: var(--dark2);
-    position: relative;
-}
-
-.hero img {
-    width: 100%;
-    height: 530px;
-    opacity: 0.100;
-}
-
-
-
-span {
-    color: var(--primary);
-}
-
-
-
-
-
-
-
-
-
-
-/*Briefcase*/
-
-.briefcase {
-    background-color: var(--dark1);
-}
-
-.briefcase-section h2{
-    padding: 40px;
-    text-align: center;
- 
-}
-
-.briefcase-grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(390px,auto));
-    gap:55px;
-    width: 90%;
-    margin:0 auto;
-  
-}
-
-.briefcase-grid img {
-    width: 100%;
-    border-radius: 10px;
-    transition: transform 0.2s ease;
-    cursor: pointer;
-
-}
-
-.briefcase-grid img:hover {
-    transform: scale(1.1);
-}
-
-
-
 
 
 
