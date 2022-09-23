@@ -40,9 +40,6 @@ body {
     justify-content: flex-end;
 }
 
-.logo {
-    display: none;
-}
 
 .menu_item {
     display: flex;
@@ -134,65 +131,7 @@ span {
 }
 
 
-@media screen and (max-width: 779px) {
 
-    .menu{
-        height: 65px;
-        top: 300px;
-        align-items: center;
-        background-color: var(--dark2);
-        height: 45px;
-        width: 100vw;
-        box-shadow: 5px 0 10px var(--primary);
-    }
-
-    .logo {
-        display: inline-flex;
-        font-size: 2.0rem;
-        justify-content: space-between;
-        color: var(--secondary);
-        text-align: center;
-    }
-    
-    .btn_menu {
-        display: inline-flex;
-        font-size: 2.0rem;
-        margin-right: 30px;
-        color: var(--secondary);
-        cursor: pointer;
-    }
-    .btn_menu:hover {
-        color: var(--primary);
-        transition: .4s;
-        
-    }
-    .menu_item {
-        position: fixed;
-        width: 100vw;
-        height: calc(100% - 410px);
-        background: var(--dark1);
-        top: -100vh;
-        text-align: center;
-        transition: all .4s;
-        flex-direction: column;
-    }
-    
-    .menu_item li  {
-        font-size: 2rem;
-        padding: 10px;
-        gap: 25px;
-    }
-
-    .menu_item a:hover {
-        color: var(--primary);
-        transition: .4s;
-    }
-
-    .briefcase-grid{
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(200px,auto));
-    } 
-}
 
 
 
@@ -542,3 +481,64 @@ label {
     
 }
 
+@media screen and (max-width: 779px) {
+
+    .menu{
+        height: 65px;
+        top: 300px;
+        align-items: center;
+        background-color: var(--dark2);
+        height: 45px;
+        width: 100vw;
+        box-shadow: 5px 0 10px var(--primary);
+    }
+    .btn_menu {
+        display: inline-flex;
+        font-size: 2.0rem;
+        margin-right: 30px;
+        color: var(--secondary);
+        cursor: pointer;
+    }
+
+    .menu-2 {
+        margin-right: 5px;
+        font-size: 2.0rem;
+        display: inline-flex;
+        color: var(--secondary);
+        cursor: pointer;
+    }
+    .menu-2:hover {
+        color: var(--primary);
+        transition: .4s;
+    }
+    .menu_item {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 410px);
+        background: var(--dark1);
+        top: -100vh;
+        text-align: center;
+        transition: all .4s;
+        flex-direction: column;
+    }
+    
+    .menu_item li  {
+        font-size: 2rem;
+        padding: 10px;
+        gap: 25px;
+    }
+
+    .menu_item a:hover {
+        color: var(--primary);
+        transition: .4s;
+    }
+
+    .briefcase-grid{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    } 
+
+    .skill h2 {
+        padding: 80px;
+    }
+}
