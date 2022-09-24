@@ -40,6 +40,9 @@ body {
     justify-content: flex-end;
 }
 
+.btn_menu {
+    display: none;
+}
 
 .menu_item {
     display: flex;
@@ -59,9 +62,7 @@ body {
     transition: .4s;
 }
 
-.btn_menu {
-    display: none;
-}
+
 
 ul.show {
     top: 50px;
@@ -391,17 +392,6 @@ label {
     justify-content: center;
 
 }
-
-.square {
-    width: 400px;
-    height: 500px;
-    background-color: var(--dark1);
-    opacity: .6;
-    z-index: 10;
-    top:40px;
-
-}
-
 .circle-trans {
     width: 290px;
     height: 290px;
@@ -429,9 +419,16 @@ label {
 }
 
 .profile-img img {
-    width: 202px;
-    height: 202px;
+    width: 205px;
+    height: 200px;
     border-radius: 50%;
+}
+
+.square {
+    width: 400px;
+    height: 500px;
+    z-index: 10;
+    top:40px;
 
 }
 
@@ -455,8 +452,6 @@ label {
     top:505px;
     z-index: 11;
 }
-
-
 .square-text-3 a {
     color: var(--secondary);
     text-decoration: none;
@@ -499,22 +494,14 @@ label {
         color: var(--secondary);
         cursor: pointer;
     }
-
-    .menu-2 {
-        margin-right: 5px;
-        font-size: 2.0rem;
-        display: inline-flex;
-        color: var(--secondary);
-        cursor: pointer;
-    }
-    .menu-2:hover {
+    .btn_menu:hover {
         color: var(--primary);
         transition: .4s;
     }
     .menu_item {
         position: fixed;
         width: 100vw;
-        height: calc(100% - 410px);
+        height: calc(100% - 30px);
         background: var(--dark1);
         top: -100vh;
         text-align: center;
@@ -540,5 +527,13 @@ label {
 
     .skill h2 {
         padding: 80px;
+    }
+    .square-text{
+        font-size: 1.5rem;
+        color: var(--secondary);
+    }
+    .square-text-2 {
+        font-size: .8rem;
+        color: var(--secondary);
     }
 }
