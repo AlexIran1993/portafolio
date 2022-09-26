@@ -43,7 +43,9 @@ body {
 .btn_menu {
     display: none;
 }
-
+.logo {
+    display: none;
+}
 .menu_item {
     display: flex;
     list-style: none;
@@ -419,6 +421,7 @@ label {
 }
 
 .profile-img img {
+    position: relative;
     width: 205px;
     height: 200px;
     border-radius: 50%;
@@ -487,7 +490,15 @@ label {
         width: 100vw;
         box-shadow: 5px 0 10px var(--primary);
     }
+    .logo {
+        position: relative;
+        display: inline-flex;
+        font-size: 2.0rem;
+        color: var(--secondary);
+        right: calc(100px - 50px)
+    }
     .btn_menu {
+        position: relative;
         display: inline-flex;
         font-size: 2.0rem;
         margin-right: 30px;
