@@ -3,7 +3,6 @@
     padding: 0;
     margin:0;
 }
-
 :root {
     --primary:#18db86;
     --secondary:white;
@@ -11,8 +10,6 @@
     --dark1:#222222;
     --dark2:#050505;
 }
-
-
 header {
     position: sticky;
     top:0;
@@ -21,25 +18,20 @@ header {
     background-color: transparent;
 
 }
-
 body {
     font-size: 18px;
     font-family: 'Signika', sans-serif;
     color: var(--secondary);
     background-color: var(--dark2)
 }
-
 .container {
     max-width: 1200px;
     margin: 0 auto;
 }
-
-
 .menu {
     display: flex;
     justify-content: flex-end;
 }
-
 .btn_menu {
     display: none;
 }
@@ -50,7 +42,6 @@ body {
     display: flex;
     list-style: none;
 }
-
 .menu_item a {
     font-size: 2rem;
     padding: 10px;
@@ -58,20 +49,16 @@ body {
     color:var(--secondary);
     margin: 20px;
 }
-
 .menu_item a:hover {
     color: var(--primary);
     transition: .4s;
 }
-
-
-
 ul.show {
     top: 50px;
 }
 
 
-
+/*Configuracion horizontal*/
 @media screen and (max-width:858px) and (orientation: landscape) {
     .navbar li {
         margin: 5px 0 0 0;
@@ -101,17 +88,14 @@ span {
 
 
 /*Briefcase*/
-
 .briefcase {
     background-color: var(--dark1);
 }
-
 .briefcase-section h2{
     padding: 40px;
     text-align: center;
  
 }
-
 .briefcase-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(390px,auto));
@@ -120,7 +104,6 @@ span {
     margin:0 auto;
   
 }
-
 .briefcase-grid img {
     width: 100%;
     border-radius: 10px;
@@ -128,22 +111,15 @@ span {
     cursor: pointer;
 
 }
-
 .briefcase-grid img:hover {
     transform: scale(1.1);
 }
 
 
-
-
-
-
 /*skills*/
-
 section.skills {
     background-color: var(--dark1);
 }
-
 .skill {
     display: grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,auto));
@@ -154,13 +130,11 @@ section.skills {
 
     padding-bottom: 110px;
 }
-
 .skill h2 {
     padding: 90px;
     font-size: 2.2rem;
     justify-content: center;
 }
-
 .skill img {
     width:100px;
 }
@@ -180,9 +154,7 @@ section.skills {
     gap:25px;
 }
 
-
 /*tooltip*/
-
 .skill h3 {
     background-color: var(--dark2);
     text-align: center;
@@ -203,10 +175,7 @@ section.skills {
     transform: translate(0px,-150px);
 }
 
-
-
 /*about*/
-
 .about {
     background-color: var(--dark2);
 }
@@ -240,7 +209,6 @@ section.skills {
 }
 
 /*footer*/
-
 footer {
     background-color: var(--dark2);
     text-align: center;
@@ -248,7 +216,6 @@ footer {
 }
 
 /*icon elements*/
-
 .icon-elements {
     /* display: flex; */
     display: grid;
@@ -260,7 +227,6 @@ footer {
     margin: 0 auto;
     
 }
-
 
 .icon-elements a {
     font-size: 1.5rem;
@@ -281,7 +247,6 @@ footer {
 }
 
 /*modals*/
-
 .eins-modal-content {
     max-width: 700px;
     background-color: var(--dark1);
@@ -319,7 +284,6 @@ footer {
     height: 50px;
 }
 
-
 .eins-modal-text p{
     padding: 5px 0;
     opacity: .8;
@@ -337,16 +301,13 @@ footer {
     font-size: 1rem;
 }
 
-
 /*contact form*/
-
 form {
     max-width: 400px;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
 }
-
 .form>label>input {
     background-color: var(--dark2);
     border-radius: 10px;
@@ -381,14 +342,11 @@ label {
 
 }
 
-
 /*circle profile*/
-
 .profile div {
     position: absolute;
 
 }
-
 .profile {
     display: flex;
     justify-content: center;
@@ -404,7 +362,6 @@ label {
     top:65px;
 
 }
-
 .circle {
     width: 230px;
     height: 230px;
@@ -414,19 +371,16 @@ label {
     top:95px;
 
 }
-
 .profile-img {
     top:110px;
     z-index: 20;
 }
-
 .profile-img img {
     position: relative;
     width: 205px;
     height: 200px;
     border-radius: 50%;
 }
-
 .square {
     width: 400px;
     height: 500px;
@@ -434,7 +388,6 @@ label {
     top:40px;
 
 }
-
 .square-text{
     font-size: 1.7rem;
     color: var(--secondary);
@@ -448,7 +401,6 @@ label {
     top: 410px;
     z-index: 11;
 }
-
 .square-text-3 {
     font-size: 1.4rem;
     color: var(--secondary);
@@ -479,8 +431,8 @@ label {
     
 }
 
+/*Configuracion responsive*/
 @media screen and (max-width: 779px) {
-
     .menu{
         height: 65px;
         top: 300px;
